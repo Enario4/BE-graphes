@@ -8,6 +8,7 @@ doc
 *.jar
 .settings
 .classpath
+insa.mapgr
 
 # Editor specific files and folders
 *~
