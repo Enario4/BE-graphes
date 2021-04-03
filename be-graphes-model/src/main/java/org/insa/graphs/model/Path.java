@@ -56,8 +56,44 @@ public class Path {
     public static Path createShortestPathFromNodes(Graph graph, List<Node> nodes)
             throws IllegalArgumentException {
         List<Arc> arcs = new ArrayList<Arc>();
-        // TODO:
-        return new Path(graph, arcs);
+        Path new_path = null;
+        if (nodes.size()==0) {
+        	return new Path(graph);
+        }
+        Node prec = nodes.get(0);
+        float min = Float.MAX_VALUE;
+        Arc min_arc = null;
+        Node dest = null;
+        for (Node node : nodes) {
+        	min = Float.MAX_VALUE;
+        	min_arc = null;
+        	if (node.compareTo(prec) == 0) {
+        		continue;
+        	}
+        	for (Arc arc_succ : prec.getSuccessors()) {
+        		dest = arc_succ.getDestination();
+        		if (dest.compareTo(node) == 0) {
+        			if (arc_succ.getLength() < min) {
+        				min = arc_succ.getLength();
+        				min_arc = arc_succ;        				
+        			}
+        		}
+        	}
+        	arcs.add(min_arc);
+        	if (min_arc == null) {
+        		throw new IllegalArgumentException();
+        	}
+        	prec = node;
+         }
+        if (nodes.size()==1) {
+        	new_path = new Path (graph,nodes.get(0));
+        	
+        }else {
+        	new_path = new Path(graph, arcs);
+        }
+        
+        
+        return new_path;
     }
 
     /**
@@ -189,8 +225,8 @@ public class Path {
      * 
      * A path is valid if any of the following is true:
      * <ul>
-     * <li>it is empty;</li>
-     * <li>it contains a single node (without arcs);</li>
+     * <li>it is empty;</li> //ok
+     * <li>it contains a single node (without arcs);</li> //ok
      * <li>the first arc has for origin the origin of the path and, for two
      * consecutive arcs, the destination of the first one is the origin of the
      * second one.</li>
@@ -198,11 +234,38 @@ public class Path {
      * 
      * @return true if the path is valid, false otherwise.
      * 
-     * @deprecated Need to be implemented.
      */
     public boolean isValid() {
-        // TODO:
-        return false;
+    	
+    	boolean valid = true;
+    	Node origine;
+    	Node dest = null;
+    	
+    	if ((this.isEmpty())) {
+    		return true;
+    	}
+    	
+    	if (this.size() == 1) {
+    		return true;
+    	}
+    	
+    	origine = this.arcs.get(0).getOrigin();
+    	
+    	if (origine.compareTo(this.getOrigin()) != 0) {
+    		return false;
+    	}
+    		
+    	for (Arc arc : this.arcs) { 
+    		origine = arc.getOrigin();
+    		if (origine.compareTo(this.arcs.get(0).getOrigin()) != 0) {
+    
+    			if (origine.compareTo(dest) != 0) {
+    				return false;
+    			}
+    		}
+    		dest = arc.getDestination();
+    	}
+        return valid;
     }
 
     /**
@@ -210,11 +273,13 @@ public class Path {
      * 
      * @return Total length of the path (in meters).
      * 
-     * @deprecated Need to be implemented.
      */
     public float getLength() {
-        // TODO:
-        return 0;
+    	float length =0;
+        for (Arc arc : this.arcs) {
+        	length += arc.getLength();
+        }
+        return length;
     }
 
     /**
@@ -225,11 +290,15 @@ public class Path {
      * @return Time (in seconds) required to travel this path at the given speed (in
      *         kilometers-per-hour).
      * 
-     * @deprecated Need to be implemented.
+     *  Need to be implemented.
      */
     public double getTravelTime(double speed) {
-        // TODO:
-        return 0;
+        double time = 0;
+        speed = speed/3.6; //en m.s
+        float distance =0;
+        distance = this.getLength();
+        time = distance/speed;
+        return time;
     }
 
     /**
@@ -238,11 +307,22 @@ public class Path {
      * 
      * @return Minimum travel time to travel this path (in seconds).
      * 
-     * @deprecated Need to be implemented.
+     *  Need to be implemented.
      */
     public double getMinimumTravelTime() {
-        // TODO:
-        return 0;
+    	RoadInformation infos;
+    	double time = 0;
+    	double vitesse = 0;
+    	float distance = 0;
+    	for (Arc arc : this.arcs) {
+    		vitesse = 0;
+    		distance = 0;
+    		infos = arc.getRoadInformation();
+    		vitesse = (infos.getMaximumSpeed())/3.6;
+    		distance = arc.getLength();
+    		time += distance/vitesse;
+    	}
+        return time;
     }
 
 }
