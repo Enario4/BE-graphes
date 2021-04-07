@@ -34,9 +34,45 @@ public class Path {
      */
     public static Path createFastestPathFromNodes(Graph graph, List<Node> nodes)
             throws IllegalArgumentException {
-        List<Arc> arcs = new ArrayList<Arc>();
-        // TODO:
-        return new Path(graph, arcs);
+    	List<Arc> arcs = new ArrayList<Arc>();
+        Path new_path = null;
+        if (nodes.size()==0) {
+        	return new Path(graph);
+        }
+        Node prec = nodes.get(0);
+        double min = Double.MAX_VALUE;
+        Arc min_arc = null;
+        Node dest = null;
+        for (Node node : nodes) {
+        	min = Double.MAX_VALUE;
+        	min_arc = null;
+        	if (node.compareTo(prec) == 0) {
+        		continue;
+        	}
+        	for (Arc arc_succ : prec.getSuccessors()) {
+        		dest = arc_succ.getDestination();
+        		if (dest.compareTo(node) == 0) {
+        			if (arc_succ.getMinimumTravelTime() < min) {
+        				min = arc_succ.getMinimumTravelTime();
+        				min_arc = arc_succ;        				
+        			}
+        		}
+        	}
+        	arcs.add(min_arc);
+        	if (min_arc == null) {
+        		throw new IllegalArgumentException();
+        	}
+        	prec = node;
+         }
+        if (nodes.size()==1) {
+        	new_path = new Path (graph,nodes.get(0));
+        	
+        }else {
+        	new_path = new Path(graph, arcs);
+        }
+        
+        
+        return new_path;
     }
 
     /**
@@ -50,8 +86,7 @@ public class Path {
      * 
      * @throws IllegalArgumentException If the list of nodes is not valid, i.e. two
      *         consecutive nodes in the list are not connected in the graph.
-     * 
-     * @deprecated Need to be implemented.
+    
      */
     public static Path createShortestPathFromNodes(Graph graph, List<Node> nodes)
             throws IllegalArgumentException {
