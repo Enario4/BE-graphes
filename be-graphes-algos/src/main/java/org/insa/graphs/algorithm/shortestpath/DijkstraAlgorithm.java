@@ -75,7 +75,7 @@ public class DijkstraAlgorithm extends ShortestPathAlgorithm {
 	        	}
 	        }
 	        // Destination has no predecessor, the solution is infeasible...
-	        if (labels_tab[data.getDestination().getId()] == null) {
+	        if (labels_tab[data.getDestination().getId()].getArcPrec() == null) {
 	            solution = new ShortestPathSolution(data, Status.INFEASIBLE);
 	        }
 	        else {
