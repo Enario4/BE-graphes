@@ -50,6 +50,12 @@ public class DijkstraAlgorithm extends ShortestPathAlgorithm {
 	        }
 	        //Sinon on parcourt les successeurs
 	        for (Arc arc : labels_tab[x.getNode().getId()].getNode().getSuccessors()) {
+	        	
+	        	//Vérifie si l'arc est accessible (dépend du mode de circulation)
+	        	if (!data.isAllowed(arc)) {
+					continue;
+				}
+	        	
 	        	//Si le sommet n'est pas marqué :
 	        	if (!(labels_tab[arc.getDestination().getId()].isMarked())) {
 	        		
