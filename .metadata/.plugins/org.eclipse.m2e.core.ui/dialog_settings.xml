@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes"/>
 			<item value="C:\Program Files\Git\BE-graphes"/>
 		</list>
 		<list key="projectNameTemplate">

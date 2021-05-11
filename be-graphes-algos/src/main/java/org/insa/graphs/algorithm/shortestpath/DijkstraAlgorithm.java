@@ -43,6 +43,8 @@ public class DijkstraAlgorithm extends ShortestPathAlgorithm {
 	        Label x = tas.deleteMin();
 	        x.setMark();
 	        notifyNodeMarked(x.getNode());
+	        /*float cost = x.getCost();
+	        System.out.println(cost);*/
 	        
 	        //Si c'est la destination, on s'arrête
 	        if (x.getNode().compareTo(dest) == 0) {
@@ -51,6 +53,8 @@ public class DijkstraAlgorithm extends ShortestPathAlgorithm {
 	        //Sinon on parcourt les successeurs
 	        for (Arc arc : labels_tab[x.getNode().getId()].getNode().getSuccessors()) {
 	        	
+	        	/*int nbr_succ = labels_tab[x.getNode().getId()].getNode().getNumberOfSuccessors();
+	        	System.out.println(nbr_succ);*/
 	        	//Vérifie si l'arc est accessible (dépend du mode de circulation)
 	        	if (!data.isAllowed(arc)) {
 					continue;
