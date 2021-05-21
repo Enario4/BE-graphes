@@ -3,4 +3,11 @@
     <fullyQualifiedTypeName name="java.awt.Label"/>
     <fullyQualifiedTypeName name="org.insa.graphs.model.Graph"/>
     <fullyQualifiedTypeName name="org.insa.graphs.model.Node"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="org.junit.Test"/>
+    <fullyQualifiedTypeName name="java.io.DataInputStream"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="org.insa.graphs.model.io.BinaryGraphReader"/>
+    <fullyQualifiedTypeName name="java.io.BufferedInputStream"/>
+    <fullyQualifiedTypeName name="org.junit.BeforeClass"/>
 </qualifiedTypeNameHistroy>

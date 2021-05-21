@@ -198,3 +198,159 @@
 2021-05-11 17:43:04,648 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
 2021-05-11 17:43:04,649 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-05-11 17:43:04,649 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 08:04:24,638 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2021-05-21 08:04:26,349 [Worker-10: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/be-graphes-model: org.insa.graphs:be-graphes-model:0.0.1-SNAPSHOT with classifier  to /be-graphes-model/target/classes
+2021-05-21 08:04:26,352 [Worker-10: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/be-graphes-algos: org.insa.graphs:be-graphes-algos:0.0.1-SNAPSHOT with classifier  to /be-graphes-algos/target/classes
+2021-05-21 08:04:26,991 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 08:04:26,999 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2021-05-21 08:04:27,009 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 08:04:27,010 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-gui\src\test\resources
+2021-05-21 08:21:42,709 [Worker-25: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/be-graphes-model: org.insa.graphs:be-graphes-model:0.0.1-SNAPSHOT with classifier  to /be-graphes-model/target/classes
+2021-05-21 08:21:42,714 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 08:21:42,715 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 08:21:42,716 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 08:21:42,716 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 08:22:07,066 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 08:22:07,066 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 08:22:07,068 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 08:22:07,069 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 08:22:55,117 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 08:22:55,117 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 08:22:55,119 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 08:22:55,119 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 08:23:50,351 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 08:23:50,351 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 08:23:50,352 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 08:23:50,352 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 08:43:35,500 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 08:43:35,501 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 08:43:35,502 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 08:43:35,502 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 09:21:42,750 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 09:21:42,751 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 09:21:42,753 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 09:21:42,753 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 09:21:59,944 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 09:21:59,945 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 09:21:59,945 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 09:21:59,945 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 09:22:52,652 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 09:22:52,653 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 09:22:52,653 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 09:22:52,654 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 09:23:58,108 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 09:23:58,109 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 09:23:58,109 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 09:23:58,110 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 09:24:14,057 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 09:24:14,057 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 09:24:14,058 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 09:24:14,058 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 09:25:25,440 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 09:25:25,441 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 09:25:25,442 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 09:25:25,442 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 09:25:37,901 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 09:25:37,901 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 09:25:37,902 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 09:25:37,902 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 09:26:10,174 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 09:26:10,174 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 09:26:10,176 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 09:26:10,176 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 09:43:34,910 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 09:43:34,911 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 09:43:34,912 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 09:43:34,912 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 09:49:19,408 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 09:49:19,408 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 09:49:19,409 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 09:49:19,410 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 09:52:29,339 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 09:52:29,340 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 09:52:29,341 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 09:52:29,341 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 09:55:14,659 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 09:55:14,659 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 09:55:14,660 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 09:55:14,660 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 10:01:10,397 [Worker-66: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:01:10,398 [Worker-66: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 10:01:10,398 [Worker-66: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:01:10,399 [Worker-66: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 10:01:21,058 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:01:21,058 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 10:01:21,060 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:01:21,061 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 10:01:53,910 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:01:53,910 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 10:01:53,912 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:01:53,912 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 10:02:33,007 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:02:33,008 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 10:02:33,009 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:02:33,009 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 10:11:52,446 [Worker-74: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:11:52,446 [Worker-74: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 10:11:52,447 [Worker-74: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:11:52,447 [Worker-74: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 10:12:00,091 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:12:00,091 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 10:12:00,092 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:12:00,092 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 10:12:54,672 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:12:54,672 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 10:12:54,673 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:12:54,673 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 10:13:24,509 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:13:24,509 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 10:13:24,510 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:13:24,510 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 10:22:26,081 [Worker-81: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:22:26,081 [Worker-81: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 10:22:26,082 [Worker-81: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:22:26,082 [Worker-81: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 10:28:27,708 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:28:27,709 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 10:28:27,709 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:28:27,709 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 10:31:09,084 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:31:09,084 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 10:31:09,085 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:31:09,085 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 10:32:04,142 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:32:04,142 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 10:32:04,143 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:32:04,143 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 10:32:09,829 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:32:09,830 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 10:32:09,830 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:32:09,831 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 10:33:37,831 [Worker-88: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:33:37,831 [Worker-88: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 10:33:37,832 [Worker-88: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:33:37,832 [Worker-88: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 10:35:11,901 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:35:11,901 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 10:35:11,902 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:35:11,902 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 10:35:28,308 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:35:28,309 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 10:35:28,309 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:35:28,309 [Worker-86: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 10:46:07,997 [Worker-89: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:46:07,997 [Worker-89: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 10:46:07,998 [Worker-89: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:46:07,998 [Worker-89: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 10:47:02,895 [Worker-89: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:47:02,896 [Worker-89: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 10:47:02,896 [Worker-89: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:47:02,896 [Worker-89: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 10:49:27,629 [Worker-95: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:49:27,629 [Worker-95: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 10:49:27,629 [Worker-95: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:49:27,630 [Worker-95: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
+2021-05-21 10:49:32,961 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:49:32,961 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\main\resources
+2021-05-21 10:49:32,962 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-21 10:49:32,962 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Oriane\Documents\3MIC\graphes\BE\git2\BE-graphes\be-graphes-algos\src\test\resources
