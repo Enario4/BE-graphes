@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 import org.insa.graphs.algorithm.AbstractSolution.Status;
+import org.insa.graphs.algorithm.AbstractInputData;
+import org.insa.graphs.algorithm.AbstractInputData.Mode;
 import org.insa.graphs.algorithm.utils.*;
 import org.insa.graphs.model.*;
 
@@ -62,20 +64,25 @@ public class DijkstraAlgorithm extends ShortestPathAlgorithm {
 	        	notifyNodeReached(arc.getDestination());
 	        	//Si le sommet n'est pas marqué :
 	        	if (!(labels_tab[arc.getDestination().getId()].isMarked())) {
-	        		
-	        		//Si on obtient un meilleur coût
-	        		if (labels_tab[arc.getDestination().getId()].getCost() > labels_tab[x.getNode().getId()].getCost() + arc.getLength()) {
-	        			//Si deja dans le tas 
-	        			if (labels_tab[arc.getDestination().getId()].getCost() != Float.MAX_VALUE) {
-	        				tas.remove(labels_tab[arc.getDestination().getId()]);
-	        			}
-
-	        		//Met à jour le coût et ajoute le label au tas
-	        			labels_tab[arc.getDestination().getId()].setCost(labels_tab[x.getNode().getId()].getCost()+ arc.getLength());
-	        			tas.insert(labels_tab[arc.getDestination().getId()]);
-	        			labels_tab[arc.getDestination().getId()].setArcPrec(arc);
+	        		float c =0;
+	        		if (data.getMode() == Mode.TIME) {
+	        			c = (float)arc.getMinimumTravelTime();
+	        		} else {
+	        			c = arc.getLength();
 	        		}
-	        	}
+		        	//Si on obtient un meilleur coût
+		        	if (labels_tab[arc.getDestination().getId()].getCost() > labels_tab[x.getNode().getId()].getCost() + c) {
+		        		//Si deja dans le tas 
+		       			if (labels_tab[arc.getDestination().getId()].getCost() != Float.MAX_VALUE) {
+		       				tas.remove(labels_tab[arc.getDestination().getId()]);
+		       			}
+
+		        	//Met à jour le coût et ajoute le label au tas
+		        		labels_tab[arc.getDestination().getId()].setCost(labels_tab[x.getNode().getId()].getCost()+ c);
+		       			tas.insert(labels_tab[arc.getDestination().getId()]);
+		       			labels_tab[arc.getDestination().getId()].setArcPrec(arc);
+		       		}
+	       		}
 	        }
 	        // Destination has no predecessor, the solution is infeasible...
 	        if (labels_tab[data.getDestination().getId()].getArcPrec() == null) {

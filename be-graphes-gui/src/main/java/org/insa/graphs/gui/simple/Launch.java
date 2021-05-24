@@ -42,7 +42,6 @@ public class Launch {
         });
         return basicDrawing;
     }
-    // Oriane Berry 25 mars 2021
 
     public static void main(String[] args) throws Exception {
 
