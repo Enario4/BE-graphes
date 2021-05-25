@@ -14,6 +14,17 @@ public class DijkstraAlgorithm extends ShortestPathAlgorithm {
     public DijkstraAlgorithm(ShortestPathData data) {
         super(data);
     }
+   
+    
+    protected void insert(BinaryHeap<Label> tas, Node sommet_courant, boolean marque, float cout, Arc arc_precedent, ShortestPathData data) {
+    	Label label;
+		label = new Label(sommet_courant, marque, cout, arc_precedent);
+		tas.insert(label);
+		Label.label_tab[sommet_courant.getId()] = label;
+		notifyNodeReached(label.getNode());
+    }
+    
+    
 
     @Override
     protected ShortestPathSolution doRun() {
@@ -26,19 +37,22 @@ public class DijkstraAlgorithm extends ShortestPathAlgorithm {
         // Tas de Labels
 		BinaryHeap<Label> tas = new BinaryHeap<Label>();
 		
-		// Tableau de Labels 
-		Label labels_tab[] = new Label[graph.size()];
-		
+				
 		// Initialisation 
 		
-		for (Node node : graph.getNodes()) {
+		/*for (Node node : graph.getNodes()) {
 			labels_tab[node.getId()] = new Label (node);
 		}
 		Label first = new Label(data.getOrigin());
 		labels_tab[first.getNode().getId()] = first;
 		tas.insert(first);
 		first.setCost(0);
-		notifyOriginProcessed(data.getOrigin());
+		notifyOriginProcessed(data.getOrigin());*/
+		
+		Label.label_tab = new Label[graph.getNodes().size()];
+		Node origine = data.getOrigin();
+		insert (tas, origine, true, (float)0.0, null, data);
+		
 		// Itérations 
 		
   		while (!fini && !tas.isEmpty()) {
@@ -52,40 +66,52 @@ public class DijkstraAlgorithm extends ShortestPathAlgorithm {
 	        if (x.getNode().compareTo(dest) == 0) {
 	        	fini = true;
 	        }
+	        
 	        //Sinon on parcourt les successeurs
-	        for (Arc arc : labels_tab[x.getNode().getId()].getNode().getSuccessors()) {
+	        for (Arc arc : x.getNode().getSuccessors()) {
 	        	
 	        	/*int nbr_succ = labels_tab[x.getNode().getId()].getNode().getNumberOfSuccessors();
 	        	System.out.println(nbr_succ);*/
+	        	
+	        	
 	        	//Vérifie si l'arc est accessible (dépend du mode de circulation)
 	        	if (!data.isAllowed(arc)) {
 					continue;
 				}
-	        	notifyNodeReached(arc.getDestination());
-	        	//Si le sommet n'est pas marqué :
-	        	if (!(labels_tab[arc.getDestination().getId()].isMarked())) {
-	        		float c =0;
-	        		if (data.getMode() == Mode.TIME) {
-	        			c = (float)arc.getMinimumTravelTime();
-	        		} else {
-	        			c = arc.getLength();
-	        		}
-		        	//Si on obtient un meilleur coût
-		        	if (labels_tab[arc.getDestination().getId()].getCost() > labels_tab[x.getNode().getId()].getCost() + c) {
-		        		//Si deja dans le tas 
-		       			if (labels_tab[arc.getDestination().getId()].getCost() != Float.MAX_VALUE) {
-		       				tas.remove(labels_tab[arc.getDestination().getId()]);
-		       			}
+	        	
 
-		        	//Met à jour le coût et ajoute le label au tas
-		        		labels_tab[arc.getDestination().getId()].setCost(labels_tab[x.getNode().getId()].getCost()+ c);
-		       			tas.insert(labels_tab[arc.getDestination().getId()]);
-		       			labels_tab[arc.getDestination().getId()].setArcPrec(arc);
+        		float c =0;
+        		if (data.getMode() == Mode.TIME) {
+        			c = (float)arc.getMinimumTravelTime();
+        		} else {
+        			c = arc.getLength();
+        		}
+        		
+	        	//notifyNodeReached(arc.getDestination());
+	        	if (Label.label_tab[arc.getDestination().getId()] == null) {
+	        		insert(tas, arc.getDestination(), false, (float)(x.getCost() + c), arc, data);
+	        	} else {
+	        	//Si le sommet n'est pas marqué :
+		        	if (!(Label.label_tab[arc.getDestination().getId()].isMarked())) {
+		        		
+			        	
+		        		//Si on obtient un meilleur coût
+			        	if (Label.label_tab[arc.getDestination().getId()].getCost() > Label.label_tab[x.getNode().getId()].getCost() + c) {
+			        		//Si deja dans le tas 
+			       			if (Label.label_tab[arc.getDestination().getId()].getCost() != Float.MAX_VALUE) {
+			       				tas.remove(Label.label_tab[arc.getDestination().getId()]);
+			       			}
+	
+			        	//Met à jour le coût et ajoute le label au tas
+			        		Label.label_tab[arc.getDestination().getId()].setCost(Label.label_tab[x.getNode().getId()].getCost()+ c);
+			       			tas.insert(Label.label_tab[arc.getDestination().getId()]);
+			       			Label.label_tab[arc.getDestination().getId()].setArcPrec(arc);
+			       		}
 		       		}
-	       		}
+	        	}
 	        }
 	        // Destination has no predecessor, the solution is infeasible...
-	        if (labels_tab[data.getDestination().getId()].getArcPrec() == null) {
+	        if (Label.label_tab[data.getDestination().getId()] == null) {
 	            solution = new ShortestPathSolution(data, Status.INFEASIBLE);
 	        }
 	        else {
@@ -94,10 +120,10 @@ public class DijkstraAlgorithm extends ShortestPathAlgorithm {
 	            notifyDestinationReached(data.getDestination());
 	            // Create the path from the array of predecessors...
 	            ArrayList<Arc> arcs = new ArrayList<>();
-	            Arc arc = labels_tab[data.getDestination().getId()].getArcPrec();
+	            Arc arc = Label.label_tab[data.getDestination().getId()].getArcPrec();
 	            while (arc != null) {
 	                arcs.add(arc);
-	                arc = labels_tab[arc.getOrigin().getId()].getArcPrec();
+	                arc = Label.label_tab[arc.getOrigin().getId()].getArcPrec();
 	            }
 
 	            // Reverse the path...

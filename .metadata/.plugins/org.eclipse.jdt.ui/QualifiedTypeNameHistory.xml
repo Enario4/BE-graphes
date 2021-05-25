@@ -10,4 +10,7 @@
     <fullyQualifiedTypeName name="org.insa.graphs.model.io.BinaryGraphReader"/>
     <fullyQualifiedTypeName name="java.io.BufferedInputStream"/>
     <fullyQualifiedTypeName name="org.junit.BeforeClass"/>
+    <fullyQualifiedTypeName name="org.insa.graphs.algorithm.AbstractSolution.Status"/>
+    <fullyQualifiedTypeName name="org.insa.graphs.algorithm.AbstractInputData.Mode"/>
+    <fullyQualifiedTypeName name="org.insa.graphs.algorithm.AbstractInputData"/>
 </qualifiedTypeNameHistroy>
