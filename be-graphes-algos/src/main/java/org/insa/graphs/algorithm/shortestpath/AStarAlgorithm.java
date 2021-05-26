@@ -1,6 +1,5 @@
 package org.insa.graphs.algorithm.shortestpath;
 
-import org.insa.graphs.algorithm.AbstractInputData;
 import org.insa.graphs.algorithm.AbstractInputData.Mode;
 import org.insa.graphs.algorithm.utils.*;
 import org.insa.graphs.model.*;
@@ -15,18 +14,19 @@ public class AStarAlgorithm extends DijkstraAlgorithm {
 	@Override
 	protected void insert(BinaryHeap<Label> BH, Node n, boolean marked, float Cout, Arc Father, ShortestPathData data) {
 		Label lab;
-		float cout_estim;
+		double cout_estim;
 		
 		if (data.getMode()==Mode.LENGTH) 
 		{
-			cout_estim=(float) n.getPoint().distanceTo(data.getDestination().getPoint());
+			cout_estim= n.getPoint().distanceTo(data.getDestination().getPoint());
 		}
 		else 
 		{
 			float max_speed = (float) Math.max(data.getMaximumSpeed(), data.getGraph().getGraphInformation().getMaximumSpeed())  ;
-			cout_estim=(float)n.getPoint().distanceTo(data.getDestination().getPoint())/max_speed;
+			//cout_estim=(float)n.getPoint().distanceTo(data.getDestination().getPoint())/max_speed;
+			cout_estim = (Point.distance(data.getDestination().getPoint(),n.getPoint())*3600.0) / ((double)(max_speed)*1000.0);
 		}
-		lab = new LabelStar(n,marked,Cout,Father,cout_estim);
+		lab = new LabelStar(n,marked,Cout,Father,(float) cout_estim);
 		BH.insert(lab);
 		Label.label_tab[n.getId()]=lab;
 		notifyNodeReached(lab.getNode());

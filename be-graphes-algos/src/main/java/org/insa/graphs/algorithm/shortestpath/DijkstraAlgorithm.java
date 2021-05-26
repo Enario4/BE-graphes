@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 import org.insa.graphs.algorithm.AbstractSolution.Status;
-import org.insa.graphs.algorithm.AbstractInputData;
 import org.insa.graphs.algorithm.AbstractInputData.Mode;
 import org.insa.graphs.algorithm.utils.*;
 import org.insa.graphs.model.*;
@@ -32,6 +31,8 @@ public class DijkstraAlgorithm extends ShortestPathAlgorithm {
         ShortestPathSolution solution = null;
         boolean fini = false;
         Graph graph = data.getGraph();
+		Node origine = data.getOrigin();
+		notifyOriginProcessed(origine);
         Node dest = data.getDestination();
         
         // Tas de Labels
@@ -50,7 +51,6 @@ public class DijkstraAlgorithm extends ShortestPathAlgorithm {
 		notifyOriginProcessed(data.getOrigin());*/
 		
 		Label.label_tab = new Label[graph.getNodes().size()];
-		Node origine = data.getOrigin();
 		insert (tas, origine, true, (float)0.0, null, data);
 		
 		// Itérations 
@@ -80,47 +80,46 @@ public class DijkstraAlgorithm extends ShortestPathAlgorithm {
 				}
 	        	
 
-        		float c =0;
+        		/*float c = 0;
         		if (data.getMode() == Mode.TIME) {
         			c = (float)arc.getMinimumTravelTime();
         		} else {
         			c = arc.getLength();
-        		}
+        		}*/
         		
 	        	//notifyNodeReached(arc.getDestination());
 	        	if (Label.label_tab[arc.getDestination().getId()] == null) {
-	        		insert(tas, arc.getDestination(), false, (float)(x.getCost() + c), arc, data);
+	        		insert(tas, arc.getDestination(), false, (float)(x.getCost() + data.getCost(arc)), arc, data);
 	        	} else {
 	        	//Si le sommet n'est pas marqué :
 		        	if (!(Label.label_tab[arc.getDestination().getId()].isMarked())) {
 		        		
 			        	
 		        		//Si on obtient un meilleur coût
-			        	if (Label.label_tab[arc.getDestination().getId()].getCost() > Label.label_tab[x.getNode().getId()].getCost() + c) {
-			        		//Si deja dans le tas 
-			       			if (Label.label_tab[arc.getDestination().getId()].getCost() != Float.MAX_VALUE) {
-			       				tas.remove(Label.label_tab[arc.getDestination().getId()]);
-			       			}
+			        	if (Label.label_tab[arc.getDestination().getId()].getCost() > x.getCost() + data.getCost(arc)) {
+			        		
+			       			tas.remove(Label.label_tab[arc.getDestination().getId()]);
 	
 			        	//Met à jour le coût et ajoute le label au tas
-			        		Label.label_tab[arc.getDestination().getId()].setCost(Label.label_tab[x.getNode().getId()].getCost()+ c);
+			        		Label.label_tab[arc.getDestination().getId()].setCost((float)(x.getCost() + data.getCost(arc)));
+			        		Label.label_tab[arc.getDestination().getId()].setArcPrec(arc);
 			       			tas.insert(Label.label_tab[arc.getDestination().getId()]);
-			       			Label.label_tab[arc.getDestination().getId()].setArcPrec(arc);
+			       			
 			       		}
 		       		}
 	        	}
 	        }
 	        // Destination has no predecessor, the solution is infeasible...
-	        if (Label.label_tab[data.getDestination().getId()] == null) {
+	        if (Label.label_tab[dest.getId()] == null) {
 	            solution = new ShortestPathSolution(data, Status.INFEASIBLE);
 	        }
 	        else {
 	        	
 	            // The destination has been found, notify the observers.
-	            notifyDestinationReached(data.getDestination());
+	            notifyDestinationReached(dest);
 	            // Create the path from the array of predecessors...
 	            ArrayList<Arc> arcs = new ArrayList<>();
-	            Arc arc = Label.label_tab[data.getDestination().getId()].getArcPrec();
+	            Arc arc = Label.label_tab[dest.getId()].getArcPrec();
 	            while (arc != null) {
 	                arcs.add(arc);
 	                arc = Label.label_tab[arc.getOrigin().getId()].getArcPrec();
